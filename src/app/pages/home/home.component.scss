@@ -1,0 +1,26 @@
+section {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../../assets/img/home-bg.png');
+}
+.flex-wrapper {
+    height: 100vh;
+}
+.home-top-row {
+}
+.home-bot-row {
+} 
+h1 {
+    margin-bottom: 1vw;
+    font-size: 10rem;
+    color: whitesmoke  
+}
+p {
+    font-size: 2rem;
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+}
+hr {
+    height: 2rem;
+    background-color: rgb(60,221,236);
+}

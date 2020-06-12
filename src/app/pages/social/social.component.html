@@ -1,0 +1,79 @@
+<section id="contact-section" fxLayout="column" fxLayoutAlign="center center">
+    <div class="shared-title" id="contact-title">
+        <header>
+            <div class="title animated bounceInDown delay-1s">
+                <h1>CONTACT</h1>
+            </div>
+        </header>
+    </div>
+    <div class="cards">
+        <div [ngClass]="facebook ? 'active card' : 'card'" id="facebook">
+            <a (click)="activateFacebook()" class="card-toggle">
+                <i><span class="fa fa-facebook"></span></i></a>
+            <div [ngClass]="facebookZ ? 'activeZ card-content' : 'inActiveZ card-content'">
+                <div class="row">
+                    <div class="left col">
+                        <h2>Our <strong>Facebook</strong></h2>
+
+                        <p>Social media at its best! Add me as a friend and socially connect with what I am doing in my
+                            life right now.</p>
+                        <button class="contact-link" mat-button><a
+                                href="https://www.facebook.com/themedcabpod/">Link</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div [ngClass]="youtube ? 'active card' : 'card'" id="youtube">
+            <a (click)="activateYoutube()" class="card-toggle"><span class="fa fa-youtube"></span></a>
+            <div [ngClass]="youtubeZ ? 'activeZ card-content' : 'inActiveZ card-content'">
+                <div class="row">
+                    <div class="left col">
+                        <h2>Our <strong>Youtube</strong></h2>
+
+                        <p>Watch our episodes on Youtube.</p>
+                        <button class="contact-link" mat-button><a
+                                href="https://www.youtube.com/channel/UCbOFcj30m7eHNpjEzqRmUEg">Link</a></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div [ngClass]="instagram ? 'active card' : 'card'" id="instagram">
+            <a (click)="activateInstagram()" class="card-toggle">
+                <i class="fa fa-instagram" id="insta" aria-hidden="true"></i>
+            </a>
+            <div [ngClass]="instagramZ ? 'activeZ card-content' : 'inActiveZ card-content'">
+                <div class="row">
+                    <div class="left col">
+                        <h2>Our <strong>Instagram</strong></h2>
+                        <p>Instagram inspires creativity around the world, helping over 1 billion people create and
+                            share. Explore our photos and videos.</p>
+                        <button class="contact-link" mat-button><a
+                                href="https://www.instagram.com/TheMedCabPod/">Link</a></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div [ngClass]="soundCloud ? 'active card' : 'card'" id="soundCloud">
+            <a (click)="activateSoundCloud()" class="card-toggle">
+                <i><span class="fa fa-soundcloud"></span></i>
+            </a>
+            <div [ngClass]="soundCloudZ ? 'activeZ card-content' : 'inActiveZ card-content'">
+                <div class="row">
+                    <div class="left col">
+                        <h2>Our <strong>Sound Cloud</strong></h2>
+
+                        <p>Listen to our episodes on SoundCloud.</p>
+                        <button class="contact-link" mat-button><a
+                                href="https://soundcloud.com/user-346054100">Link</a></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
